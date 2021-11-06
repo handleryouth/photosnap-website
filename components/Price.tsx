@@ -19,7 +19,7 @@ export const Price: React.FC<PriceProps> = ({
         type === "Pro"
           ? "pro-price-container custom-border-top "
           : "general-price-container "
-      } mx-4 px-4 py-8 w-88`}
+      } mx-auto my-8 lg:my-0 lg:mx-4 px-4 py-8 lg:w-88`}
     >
       <h3
         className={`${type === "Pro" ? "text-white" : "text-white"} text-3xl`}

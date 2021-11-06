@@ -33,7 +33,7 @@ const Ads = () => {
 
 const GalleryCollections = () => {
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap flex-row ">
       <Gallery
         picture="/Images/mountains.jpg"
         owner="John Appleseed"
@@ -60,7 +60,7 @@ const GalleryCollections = () => {
 
 const FeaturesCollections = () => {
   return (
-    <div className="flex mx-6 justify-center my-16">
+    <div className="flex flex-col lg:flex-row mx-6 justify-center my-16">
       <Feature
         image="/Images/responsive.svg"
         title="100% Responsive"

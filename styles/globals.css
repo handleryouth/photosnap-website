@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url("./togglebutton.css");
+@import url("./mobilenavbar.css");
 
 body {
   font-family: "DM Sans";
@@ -19,11 +20,11 @@ body {
 
 @layer components {
   .pro-price-container {
-    @apply bg-black text-darkGray h-116 border-t-8;
+    @apply bg-black text-darkGray lg:h-116 border-t-8;
   }
 
   .general-price-container {
-    @apply bg-gray-500 text-darkGray top-11 relative h-96;
+    @apply bg-gray-500 text-darkGray lg:top-11 relative lg:h-96;
   }
 
   .general-price-button {

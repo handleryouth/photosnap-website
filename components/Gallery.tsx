@@ -14,7 +14,7 @@ export const Gallery: React.FC<GalleryProps> = ({
   date,
 }) => {
   return (
-    <div className="w-1/4 relative text-white">
+    <div className="w-full lg:w-1/4 relative text-white">
       <div className="relative " style={{ width: "100%", height: "500px" }}>
         <Image
           src={picture}

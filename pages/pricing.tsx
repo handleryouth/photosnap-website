@@ -23,7 +23,7 @@ const pricingContainer = (
         <p className="ml-4 text-lg font-bold tracking-widest">Yearly</p>
       </div>
 
-      <div className="flex text-center justify-center">
+      <div className="flex text-center justify-center flex-col lg:flex-row">
         {MockPricing.map((item, index) => {
           return (
             <Price
@@ -58,21 +58,21 @@ const compareContainer = () => {
 
   return (
     <div>
-      <h1 className="text-center text-5xl tracking-wider mt-24 mb-20">
+      <h1 className="text-center text-3xl lg:text-5xl tracking-wider mt-24 mb-20">
         COMPARE
       </h1>
-      <table className="w-6/12 mx-auto mb-32 ">
+      <table className="lg:w-6/12 mx-auto mb-32 ">
         <thead className="text-left">
-          <th className="py-6 text-sm tracking-wider font-bold">
+          <th className="py-6 px-2 lg:px-4 text-sm tracking-wider font-bold">
             THE FEATURES
           </th>
-          <th className="py-6 text-sm tracking-wider text-center font-bold">
+          <th className="py-6 px-2 lg:px-4 text-sm tracking-wider text-center font-bold">
             BASIC
           </th>
-          <th className="py-6 text-sm tracking-wider text-center font-bold">
+          <th className="py-6 px-2 lg:px-4 text-sm tracking-wider text-center font-bold">
             PRO
           </th>
-          <th className="py-6 text-sm tracking-wider text-center font-bold">
+          <th className="py-6 px-2 lg:px-4 text-sm tracking-wider text-center font-bold">
             BUSINESS
           </th>
         </thead>
@@ -81,16 +81,16 @@ const compareContainer = () => {
           {MockComparing.map((feature, index) => {
             return (
               <tr key={index}>
-                <td className="py-6 text-sm tracking-wider font-bold">
+                <td className="py-6 px-2 lg:px-4 text-sm tracking-wider font-bold">
                   {feature.title}
                 </td>
-                <td className="py-6 text-sm tracking-wider text-center font-bold">
+                <td className="py-6 px-2 lg:px-4 text-sm tracking-wider text-center font-bold">
                   {feature.basic ? checkImage() : ""}
                 </td>
-                <td className="py-6 text-sm tracking-wider text-center font-bold">
+                <td className="py-6 px-2 lg:px-4 text-sm tracking-wider text-center font-bold">
                   {feature.pro ? checkImage() : ""}
                 </td>
-                <td className="py-6 text-sm tracking-wider text-center font-bold">
+                <td className="py-6 px-2 lgpx-4 text-sm tracking-wider text-center font-bold">
                   {feature.business ? checkImage() : ""}
                 </td>
               </tr>

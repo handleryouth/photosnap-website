@@ -18,11 +18,11 @@ export const AdContainer: React.FC<AdContainerProps> = ({
   return (
     <div
       className={`${
-        imagePosition === "right" ? "flex-row" : "flex-row-reverse"
-      } flex items-center bg-black text-white `}
+        imagePosition === "right" ? "lg:flex-row" : "lg:flex-row-reverse"
+      } flex items-center bg-black text-white flex-col-reverse`}
     >
-      <div className=" px-28 flex-grow w-300">
-        <h1 className="text-4xl leading-snug">{title}</h1>
+      <div className=" lg:px-28 flex-grow lg:w-300 p-8 lg:py-0 ">
+        <h1 className="lg:text-4xl leading-snug text-2xl">{title}</h1>
         <p className="text-darkGray my-8">{subTitle}</p>
 
         {buttonText && (
