@@ -1,16 +1,36 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("./togglebutton.css");
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "DM Sans";
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.custom-border-top {
+  border-style: solid;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
 }
 
-* {
-  box-sizing: border-box;
+.custom-border-left {
+  border-style: solid;
+  border-image: linear-gradient(to top, darkblue, darkorchid) 1;
+}
+
+@layer components {
+  .pro-price-container {
+    @apply bg-black text-darkGray h-116 border-t-8;
+  }
+
+  .general-price-container {
+    @apply bg-gray-500 text-darkGray top-11 relative h-96;
+  }
+
+  .general-price-button {
+    @apply bg-black text-white;
+  }
+
+  .pro-price-button {
+    @apply bg-white text-black;
+  }
 }
