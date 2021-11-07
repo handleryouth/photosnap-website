@@ -44,7 +44,7 @@ export const MockImage: MockImage[] = [
   },
   {
     imageSrc: "/Images/king-on-africa.jpg",
-    date: "march 29th 2020",
+    date: "March 29th 2020",
     owner: "Tim Hillenburg",
     title: "King on Africa: Part II",
   },
@@ -97,10 +97,9 @@ export const MockImage: MockImage[] = [
     title: "Somwarpet's Beauty",
   },
   {
-    imageSrc: "/images/land-of-dreams.jpg",
+    imageSrc: "/Images/land-of-dreams.jpg",
     date: "February 25th 2020",
     title: "Land of Dreams",
     owner: "William Mancolm",
   },
 ];
-
